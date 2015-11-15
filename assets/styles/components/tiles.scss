@@ -1,0 +1,40 @@
+.grid {
+	padding: 0;
+	max-width: 994px;
+	margin: 0 auto;
+
+	@media (max-width: 994px) {max-width: 748px}
+	@media (max-width: 748px) {max-width: 502px}
+}
+
+.tiles {
+	// margin: 10px 0 10px;
+	// outline: 1px solid red;
+	padding: 5px;
+}
+
+.tile {
+	margin: 5px;
+	float: left;
+	display: inline-block;
+	max-width: calc(50vw - 15px);
+	background-color: #50C5B7;
+	box-sizing: border-box;
+	width: 236px;
+	height: 210px;
+	padding: 20px;
+
+	&.big {
+		background-color: #DD1D4C;
+		width: 482px;
+		height: 430px;
+		max-width: calc(100vw - 20px);
+	}
+
+	&.wide {
+		background-color: #6184DB;
+		width: 482px;
+		height: 210px;
+		max-width: calc(100vw - 20px);
+	}
+}

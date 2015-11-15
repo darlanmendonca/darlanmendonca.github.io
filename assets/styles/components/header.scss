@@ -1,0 +1,16 @@
+.header {
+	border-bottom: 1px solid $light-gray;
+	padding: 20px 10px;
+
+
+	a {
+		text-decoration: none;
+		color: $soft-gray;
+
+		&.active {color: $black}
+
+		& + a{
+			margin-left: 15px;
+		}
+	}
+}
