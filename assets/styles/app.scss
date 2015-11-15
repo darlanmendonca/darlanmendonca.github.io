@@ -9,3 +9,9 @@ $soft-gray: #aaa;
 @import 'components/typography';
 @import 'components/header';
 @import 'components/tiles';
+
+.viewport-full {
+	width: 100vw;
+	height: 100vh;
+	background: #50C5B7;
+}

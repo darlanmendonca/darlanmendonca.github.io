@@ -26,5 +26,9 @@ function routeConfig($locationProvider, $urlRouterProvider, $stateProvider) {
     .state('about', {
       url: '/about',
       templateUrl: 'templates/home.html'
+    })
+    .state('item', {
+      url: '/item',
+      templateUrl: 'templates/item.html'
     });
 }
