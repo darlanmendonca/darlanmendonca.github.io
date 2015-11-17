@@ -6,22 +6,8 @@
 	//- 	a(ui-sref='about', ui-sref-active='active') About 
 
 	.tiles.clearfix
-		a.tile.big(ui-sref='item') Tile 1
-		a.tile(ui-sref='item') Tile 2
-		a.tile(ui-sref='item') Tile 3
-		a.tile(ui-sref='item') Tile 4
-		a.tile(ui-sref='item') Tile 5
-		a.tile(ui-sref='item') Tile 6
-		a.tile(ui-sref='item') Tile 7
-		a.tile.wide(ui-sref='item') Tile 8
-		a.tile(ui-sref='item') Tile 9
-		a.tile(ui-sref='item') Tile 10
-		a.tile(ui-sref='item') Tile 11
-		a.tile(ui-sref='item') Tile 12
-		a.tile(ui-sref='item') Tile 13
-		a.tile(ui-sref='item') Tile 14
-		a.tile.wide(ui-sref='item') Tile 15
-		a.tile(ui-sref='item') Tile 16
-		a.tile(ui-sref='item') Tile 17
-		a.tile(ui-sref='item') Tile 18
-		a.tile(ui-sref='item') Tile 19
+		a.tile(
+			ng-repeat='tile in home.tiles',
+			ng-class='{big: tile.class === "big", medium: tile.class === "medium"}',
+			ui-sref='tile({id: tile.id})'
+		) Tile {{tile.id}}
