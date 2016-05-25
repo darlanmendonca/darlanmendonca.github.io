@@ -121,7 +121,6 @@ function particlesRun($rootScope, $timeout) {
 
   function particles() {
     $timeout(() => {
-      console.log(document.getElementById('particles'));
       particlesJS('particles', config);
     }, 100);
   }

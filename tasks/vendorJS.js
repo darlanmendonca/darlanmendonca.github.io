@@ -8,8 +8,11 @@ let uglify = require('gulp-uglify');
 gulp.task('vendorJS', vendorJSTask);
 
 function vendorJSTask() {
+  let dependencies = bower.ext('js').files;
+  dependencies = dependencies.map(filename => filename.replace(/\.js$/, '.min.js'));
+
   return gulp
-    .src(bower.ext('js').files)
+    .src(dependencies)
     .pipe(concat('vendor.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./public/scripts'));
