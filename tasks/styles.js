@@ -3,9 +3,8 @@
 let gulp = require('gulp');
 let gutil = require('gulp-util');
 let bower = require('bower-files')();
-let dependencies = bower.relative(__dirname).ext('scss').files;
+let dependencies = bower.ext('scss').files;
 let inject = require('gulp-inject');
-let util = require('util');
 let sass = require('gulp-sass');
 let autoprefixer = require('gulp-autoprefixer');
 let sourcemaps = require('gulp-sourcemaps');
@@ -14,24 +13,23 @@ let config = require('./gulp.config.js');
 let injectTransform = {
 	starttag: '/* inject:imports */',
 	endtag: '/* endinject */',
-	transform: function (filepath) {
-		return util.format('@import \'../..%s\';', filepath);
-	}
+	transform: filepath => `@import '../..${filepath}';`,
 };
 
 let injectConfig = {
 	read: false,
-	relative: false
+	relative: false,
 };
 
 let configPreprocessor = {
 	outputStyle: 'compressed'
 };
 
+
 gulp.task('styles', stylesTask);
 
 function stylesTask() {
-  gulp
+  return gulp
     .src(config.styles.src)
     .pipe(inject(gulp.src(dependencies, injectConfig), injectTransform))
     .pipe(sourcemaps.init())

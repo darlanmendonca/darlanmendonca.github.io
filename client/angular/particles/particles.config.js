@@ -5,10 +5,12 @@ angular
   .module('portfolium')
   .run(particlesRun);
 
-function particlesRun($rootScope, $timeout) {
+function particlesRun($rootScope) {
+  $rootScope.$on('$stateChangeSuccess', setParticles);
+
   let config = {
+    'retina_detect': true,
     particles: {
-      'retina_detect': true,
       number: {
         value: 80,
         density: {
@@ -60,7 +62,7 @@ function particlesRun($rootScope, $timeout) {
         random: false,
         straight: false,
         'out_mode': 'out',
-        bounce: true,
+        bounce: false,
         attract: {
           enable: false,
           rotateX: 600,
@@ -84,11 +86,10 @@ function particlesRun($rootScope, $timeout) {
     },
   };
 
-  $rootScope.$on('$stateChangeSuccess', particles);
-
-  function particles() {
-    $timeout(() => {
+  function setParticles(event, toState, toParams, fromState) {
+    let isFirstState = !fromState.name;
+    if (isFirstState) {
       particlesJS('particles', config);
-    }, 100);
+    }
   }
 }

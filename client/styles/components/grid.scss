@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+  width: calc(100% - 20px);
+
+  @include tablet {
+    width: calc(100% - 40px);
+  }
+
+  @include desktop {
+    width: 984px;
+  }
+}

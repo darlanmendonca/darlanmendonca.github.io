@@ -16,6 +16,7 @@ module.exports = {
 	},
 	styles: {
 		src: './client/styles/*.scss',
+    watch: './client/styles/**/*.scss',
 		dest: './public/styles/'
 	},
 	scripts: {

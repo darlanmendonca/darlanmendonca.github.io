@@ -1,6 +1,13 @@
 /* inject:imports */
 /* endinject */
 
+@import 'components/queries';
 @import 'components/reset';
 @import 'components/typography';
 @import 'components/particles';
+@import 'components/views';
+@import 'components/grid';
+
+.scroll {
+  background: red;
+}

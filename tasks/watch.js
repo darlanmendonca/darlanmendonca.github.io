@@ -1,28 +1,29 @@
 'use strict';
 
 let gulp = require('gulp');
-let gulpConfig = require('./gulp.config.js');
+let config = require('./gulp.config.js');
 
 gulp.task('watch', watchTask);
 
 function watchTask() {
-  gulp.watch(gulpConfig.views.src, [
+  gulp.watch(config.views.src, [
     'views',
-    gulpConfig.browserSync.reload
+    'reload'
   ]);
 
-  gulp.watch(gulpConfig.templates.src, [
+  gulp.watch(config.templates.src, [
     'templates',
-    gulpConfig.browserSync.reload
+    'reload'
   ]);
 
-  gulp.watch('./client/styles/**/*.scss', ['styles']);
+  gulp.watch(config.styles.watch, ['styles']);
 
-  gulp.watch(gulpConfig.scripts.src, [
+  gulp.watch(config.scripts.src, [
     'scripts',
-    gulpConfig.browserSync.reload
+    'reload'
   ]);
-  gulp.watch(gulpConfig.lint, ['lint']);
+
+  gulp.watch(config.lint, ['lint']);
 
   gulp.watch('./bower.json', [
     'vendorCSS',
