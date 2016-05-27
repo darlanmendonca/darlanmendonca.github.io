@@ -1,12 +1,7 @@
 .container {
   margin: 0 auto;
-  width: calc(100% - 20px);
-
-  @include tablet {
-    width: calc(100% - 40px);
-  }
-
-  @include desktop {
-    width: 984px;
-  }
+  width: 100%;
+  max-width: 1004px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }

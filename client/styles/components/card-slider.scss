@@ -1,0 +1,31 @@
+.card-slider {
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  transform: translateZ(0);
+
+  @include tablet {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include desktop {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  md-card {
+    margin: 0;
+    color: $mdc-black;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+
+    & + md-card {
+      margin-left: 8px;
+    }
+  }
+}
