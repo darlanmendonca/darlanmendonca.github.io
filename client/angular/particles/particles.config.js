@@ -8,6 +8,7 @@ angular
 function particlesRun($rootScope, $timeout) {
   let config = {
     particles: {
+      'retina_detect': true,
       number: {
         value: 80,
         density: {
@@ -23,14 +24,6 @@ function particlesRun($rootScope, $timeout) {
         stroke: {
           width: 0,
           color: '#ffffff',
-        },
-        polygon: {
-          'nb_sides': 5,
-        },
-        image: {
-          src: 'img/github.svg',
-          width: 100,
-          height: 100,
         },
       },
       opacity: {
@@ -67,7 +60,7 @@ function particlesRun($rootScope, $timeout) {
         random: false,
         straight: false,
         'out_mode': 'out',
-        bounce: false,
+        bounce: true,
         attract: {
           enable: false,
           rotateX: 600,
@@ -88,33 +81,7 @@ function particlesRun($rootScope, $timeout) {
         },
         resize: true,
       },
-      modes: {
-        grab: {
-          distance: 400,
-          'line_linked': {
-            opacity: 1,
-          },
-        },
-        bubble: {
-          distance: 400,
-          size: 40,
-          duration: 2,
-          opacity: 8,
-          speed: 3,
-        },
-        repulse: {
-          distance: 200,
-          duration: 0.4,
-        },
-        push: {
-          'particles_nb': 4,
-        },
-        remove: {
-          'particles_nb': 2,
-        },
-      },
     },
-    'retina_detect': true,
   };
 
   $rootScope.$on('$stateChangeSuccess', particles);
@@ -124,5 +91,4 @@ function particlesRun($rootScope, $timeout) {
       particlesJS('particles', config);
     }, 100);
   }
-
 }
