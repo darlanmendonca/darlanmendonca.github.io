@@ -7,7 +7,7 @@ module.exports = {
 		'./client/angular/**/*.js'
 	],
 	views: {
-		src: './client/views/*.jade',
+		src: './client/views/**/*.jade',
 		dest: './'
 	},
 	templates: {
