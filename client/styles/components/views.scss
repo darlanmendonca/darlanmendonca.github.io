@@ -1,4 +1,6 @@
 main[ui-view] {
   position: relative;
   overflow: hidden;
+  height: calc(100vh - 95px);
+  margin-top: 75px;
 }
