@@ -1,0 +1,17 @@
+.home {
+  &.container {
+    height: 100%;
+  }
+
+  .highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    div {
+      position: relative;
+      top: -55px;
+    }
+  }
+}
