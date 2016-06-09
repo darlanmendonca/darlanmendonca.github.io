@@ -2,6 +2,8 @@
   position: fixed;
   top: 0; left: 0;
   width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
   z-index: 5;
   transform: translateY(0);
   transition: transform .2s ease-in-out;
