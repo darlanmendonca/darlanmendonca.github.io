@@ -7,7 +7,7 @@
   z-index: 5;
   transform: translateY(0);
   transition: transform .2s ease-in-out;
-  background: map-get($mdc-blue, 500);
+  // background: map-get($mdc-blue, 500);
   // will-change: top, position;
 
   &.hidden {
