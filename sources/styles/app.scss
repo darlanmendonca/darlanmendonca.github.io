@@ -4,3 +4,28 @@
 @import 'components/queries';
 @import 'components/reset';
 @import 'components/typography';
+
+
+body {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  small {
+    font-weight: normal;
+    font-size: .5em;
+    display: block;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mn-image {
+    // flex: 1 1 auto;
+    margin: 0 2em;
+  }
+}
