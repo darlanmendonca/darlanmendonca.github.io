@@ -24,5 +24,5 @@ function spritesTask() {
     .pipe(spritesmith(options));
 
   sprite.img.pipe(gulp.dest(config.sprites.dest));
-  sprite.css.pipe(gulp.dest('./client/styles/components/'));
+  sprite.css.pipe(gulp.dest('./sources/styles/components/'));
 }

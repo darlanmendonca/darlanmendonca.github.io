@@ -1,36 +1,36 @@
 'use strict';
 
 module.exports = {
-	lint: [
-		'./gulpfile.js',
-		'./test/**/*.js',
-		'./client/angular/**/*.js'
-	],
-	views: {
-		src: './client/views/**/*.jade',
-		dest: './'
-	},
-	templates: {
-		src: './client/angular/**/*.jade',
-		dest: './public/templates/'
-	},
-	styles: {
-		src: './client/styles/*.scss',
-    watch: './client/styles/**/*.scss',
-		dest: './public/styles/'
-	},
-	scripts: {
-		src: [
-			'./client/angular/**/*.js',
-			'!./client/angular/**/*.spec.js'
-		],
-		dest: './public/scripts/'
-	},
-	sprites: {
-		src: './client/sprites/*.png',
-		dest: './public/imgs/sprites/'
-	},
-	browserSync: require('browser-sync').create(),
+  lint: [
+    './gulpfile.js',
+    './test/**/*.js',
+    './sources/angular/**/*.js'
+  ],
+  views: {
+    src: './sources/views/**/*.jade',
+    dest: './'
+  },
+  templates: {
+    src: './sources/angular/**/*.jade',
+    dest: './public/templates/'
+  },
+  styles: {
+    src: './sources/styles/*.scss',
+    watch: './sources/styles/**/*.scss',
+    dest: './public/styles/'
+  },
+  scripts: {
+    src: [
+      './sources/angular/**/*.js',
+      '!./sources/angular/**/*.spec.js'
+    ],
+    dest: './public/scripts/'
+  },
+  sprites: {
+    src: './sources/sprites/*.png',
+    dest: './public/imgs/sprites/'
+  },
+  browserSync: require('browser-sync').create(),
   browserSyncOptions: {
     server: {
       baseDir: './'

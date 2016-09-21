@@ -7,13 +7,12 @@ module.exports = {
   env: {
     node: true,
     browser: true,
-    es6: true
+    es6: true,
+    mocha: true,
   },
   globals: {
     angular: true,
     ENV: true,
-    describe: true,
-    it: true
   },
   plugins: [
     'angular'

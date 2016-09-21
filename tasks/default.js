@@ -3,14 +3,14 @@
 let gulp = require('gulp');
 
 let tasks = [
-	'views',
+  'views',
   'templates',
-	'browser-sync',
-	'sprites',
-	'styles',
-	'scripts',
-	'lint',
-	'watch'
+  'browser-sync',
+  'sprites',
+  'styles',
+  'scripts',
+  'lint',
+  'watch'
 ];
 
 gulp.task('default', tasks);
