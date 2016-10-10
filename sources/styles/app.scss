@@ -4,12 +4,6 @@
 @import 'components/reset';
 @import 'components/typography';
 
-
-body {
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
 h1 {
   text-align: center;
 
@@ -22,8 +16,10 @@ h1 {
 
 nav {
   margin-top: 2em;
+
+  a {outline: 0}
 }
 
 mn-image {
-  margin: 0 2em;
+  margin: 1em;
 }
