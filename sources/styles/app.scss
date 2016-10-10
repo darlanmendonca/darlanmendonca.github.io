@@ -1,7 +1,6 @@
 /* inject:imports */
 /* endinject */
 
-@import 'components/queries';
 @import 'components/reset';
 @import 'components/typography';
 
@@ -12,6 +11,8 @@ body {
 }
 
 h1 {
+  text-align: center;
+
   small {
     font-weight: normal;
     font-size: .5em;
@@ -19,13 +20,10 @@ h1 {
   }
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+nav {
+  margin-top: 2em;
+}
 
-  mn-image {
-    // flex: 1 1 auto;
-    margin: 0 2em;
-  }
+mn-image {
+  margin: 0 2em;
 }
