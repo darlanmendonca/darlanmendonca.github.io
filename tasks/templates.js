@@ -3,6 +3,7 @@ import jade from 'gulp-jade';
 import plumber from 'gulp-plumber';
 import gutil from 'gulp-util';
 import {templates} from './config.js';
+import flatten from 'gulp-flatten';
 
 gulp.task('templates', templatesTask);
 
@@ -11,6 +12,7 @@ function templatesTask() {
     .src(templates.src)
     .pipe(plumber({errorHandler}))
     .pipe(jade())
+    .pipe(flatten())
     .pipe(gulp.dest(templates.dest));
 }
 
