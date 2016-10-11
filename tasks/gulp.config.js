@@ -14,6 +14,10 @@ module.exports = {
     src: './sources/angular/**/*.jade',
     dest: './public/templates/'
   },
+  imgs: {
+    src: './sources/imgs/*',
+    dest: './public/imgs',
+  },
   styles: {
     src: './sources/styles/*.scss',
     watch: './sources/styles/**/*.scss',

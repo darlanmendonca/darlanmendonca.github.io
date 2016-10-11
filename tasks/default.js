@@ -10,6 +10,7 @@ let tasks = [
   'styles',
   'scripts',
   'lint',
+  'imgs',
   'watch'
 ];
 
