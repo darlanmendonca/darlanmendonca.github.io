@@ -1,6 +1,3 @@
-/* globals beforeEach, expect, describe, it */
-'use strict';
-
 let module = angular.mock.module;
 let inject = angular.mock.inject;
 

@@ -4,18 +4,21 @@ let optional = 1;
 let required = 2;
 
 module.exports = {
+  parserOptions: {
+    sourceType: 'module',
+  },
   env: {
     node: true,
-    browser: true,
     es6: true,
     mocha: true,
+    protractor: true,
   },
   globals: {
     angular: true,
-    ENV: true,
+    expect: true,
   },
   plugins: [
-    'angular'
+    'angular',
   ],
   rules: {
     semi: [required, 'always'],

@@ -1,7 +1,5 @@
-'use strict';
-
-let gulp = require('gulp');
-let {imgs} = require('./gulp.config.js');
+import gulp from 'gulp';
+import {imgs} from './config.js';
 
 gulp.task('imgs', imgsTask);
 

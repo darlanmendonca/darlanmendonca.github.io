@@ -1,32 +1,28 @@
-'use strict';
-
-let gulp = require('gulp');
-let gutil = require('gulp-util');
-let babel = require('gulp-babel');
-let ngAnnotate = require('gulp-ng-annotate');
-let sourcemaps = require('gulp-sourcemaps');
-let config = require('./gulp.config.js');
-let plumber = require('gulp-plumber');
-let concat = require('gulp-concat');
-let uglify = require('gulp-uglify');
+import gulp from 'gulp';
+import gutil from 'gulp-util';
+import babel from 'gulp-babel';
+import sourcemaps from 'gulp-sourcemaps';
+import plumber from 'gulp-plumber';
+import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
+import {scripts} from './config.js';
 
 gulp.task('scripts', scriptsTask);
 
 function scriptsTask() {
   return gulp
-    .src(config.scripts.src)
-    .pipe(plumber({ errorHandler: onError }))
+    .src(scripts.src)
+    .pipe(plumber({errorHandler}))
     .pipe(sourcemaps.init())
-    .pipe(ngAnnotate())
     .pipe(babel())
     .pipe(concat('app.js'))
     .pipe(uglify({mangle: false}))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(config.scripts.dest));
+    .pipe(gulp.dest(scripts.dest));
 }
 
-function onError(err) {
-	let message = new gutil.PluginError(err.plugin, err.message).toString();
-	process.stderr.write(message + '\n');
-	gutil.beep();
+function errorHandler(err) {
+  let message = new gutil.PluginError(err.plugin, err.message).toString();
+  process.stderr.write(message + '\n');
+  gutil.beep();
 }

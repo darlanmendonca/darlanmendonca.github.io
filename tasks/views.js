@@ -1,11 +1,9 @@
-'use strict';
-
-let gulp = require('gulp');
-let gutil = require('gulp-util');
-let jade = require('gulp-jade');
-let flatten = require('gulp-flatten');
-let config = require('./gulp.config.js');
-let plumber = require('gulp-plumber');
+import gulp from 'gulp';
+import gutil from 'gulp-util';
+import jade from 'gulp-jade';
+import flatten from 'gulp-flatten';
+import config from './config.js';
+import plumber from 'gulp-plumber';
 
 gulp.task('views', viewsTask);
 

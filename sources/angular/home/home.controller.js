@@ -1,6 +1,3 @@
-/* globals angular */
-'use strict';
-
 angular
   .module('portfolium')
   .controller('HomeController', HomeController);
