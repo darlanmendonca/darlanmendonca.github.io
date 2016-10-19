@@ -4,7 +4,7 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-ui-router": "^0.2.15",
-    "mn-image": "^0.0.7",
+    "mn-image": "^0.0.8",
     "mn-layout": "^0.0.6"
   },
   "devDependencies": {
