@@ -1,6 +1,7 @@
 {
   "name": "portfolium",
   "version": "0.0.0",
+  "private": true,
   "dependencies": {
     "mn-image": "^0.0.8",
     "mn-layout": "^0.0.6"
