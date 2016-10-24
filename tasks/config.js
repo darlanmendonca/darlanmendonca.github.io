@@ -8,10 +8,6 @@ module.exports = {
     src: './sources/views/**/*.jade',
     dest: './'
   },
-  templates: {
-    src: './sources/angular/**/*.jade',
-    dest: './public/templates/'
-  },
   imgs: {
     src: './sources/imgs/*',
     dest: './public/imgs',

@@ -16,11 +16,6 @@ function watchTask() {
     browserSync.reload,
   ]);
 
-  gulp.watch(templates.src, [
-    'templates',
-    browserSync.reload,
-  ]);
-
   gulp.watch(styles.watch, ['styles']);
 
   gulp.watch(scripts.src, [
