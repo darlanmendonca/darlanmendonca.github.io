@@ -28,6 +28,8 @@ block content
         mn-image {width: 80vw; pointer-events: none}
       }
 
+      
+
     nav.layout-row#scroll
       .scroll
         a(href='#'): mn-image(src='/public/imgs/bb-bitch.gif')
@@ -41,3 +43,18 @@ block content
       small this site is under development...
 
 
+    script.
+      document
+        .querySelector('.scroll')
+        .addEventListener('onscroll', blurMnImage);
+
+      var mnImages = Array.prototype.slice.call(document.querySelectorAll('mn-image'));
+
+      function blurMnImage() {
+        //- console.log('scroll');
+        mnImages.forEach(blur);
+
+        function blur(mnImage) {
+          mnImage.blur();
+        }
+      }

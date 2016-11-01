@@ -16,4 +16,19 @@ mn-image {width: 33vw}
 @media (max-width: 500px) {
   mn-image {width: 80vw; pointer-events: none}
 }
-</style><nav id="scroll" class="layout-row"><div class="scroll"><a href="#"><mn-image src="/public/imgs/bb-bitch.gif"></mn-image></a><a href="#"><mn-image src="/public/imgs/rawfit.jpg"></mn-image></a><a href="#"><mn-image src="/public/imgs/cat.jpg"></mn-image></a><a href="#"><mn-image src="/public/imgs/bb-bitch.gif"></mn-image></a><a href="#"><mn-image src="/public/imgs/rawfit.jpg"></mn-image></a><a href="#"><mn-image src="/public/imgs/cat.jpg"></mn-image></a></div></nav><footer class="align-end"><small>this site is under development...</small></footer></div><script src="/public/scripts/vendor.js"></script></body></html>
+
+
+</style><nav id="scroll" class="layout-row"><div class="scroll"><a href="#"><mn-image src="/public/imgs/bb-bitch.gif"></mn-image></a><a href="#"><mn-image src="/public/imgs/rawfit.jpg"></mn-image></a><a href="#"><mn-image src="/public/imgs/cat.jpg"></mn-image></a><a href="#"><mn-image src="/public/imgs/bb-bitch.gif"></mn-image></a><a href="#"><mn-image src="/public/imgs/rawfit.jpg"></mn-image></a><a href="#"><mn-image src="/public/imgs/cat.jpg"></mn-image></a></div></nav><footer class="align-end"><small>this site is under development...</small></footer><script>document
+  .querySelector('.scroll')
+  .addEventListener('onscroll', blurMnImage);
+
+var mnImages = Array.prototype.slice.call(document.querySelectorAll('mn-image'));
+
+function blurMnImage() {
+  //- console.log('scroll');
+  mnImages.forEach(blur);
+
+  function blur(mnImage) {
+    mnImage.blur();
+  }
+}</script></div><script src="/public/scripts/vendor.js"></script></body></html>
