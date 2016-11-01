@@ -8,10 +8,34 @@ block content
     h1 I build rich experiences with clean code
       small using Javascript and Swift
 
-    nav.layout-column.layout-sm-row
-      a(href='#'): mn-image(src='/public/imgs/bb-bitch.gif')
-      a(href='#'): mn-image(src='/public/imgs/rawfit.jpg')
-      a(href='#'): mn-image(src='/public/imgs/cat.jpg')
+    style.
+      #scroll {
+        width: 100vw;
+        overflow-x: scroll;
+        overfloy-y: visible;
+        margin: -100px 0;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .scroll {
+        white-space: nowrap;
+        overflow: visible;
+        padding: 100px 0;
+      }
+
+      mn-image {width: 33vw}
+      @media (max-width: 500px) {
+        mn-image {width: 80vw; pointer-events: none}
+      }
+
+    nav.layout-row#scroll
+      .scroll
+        a(href='#'): mn-image(src='/public/imgs/bb-bitch.gif')
+        a(href='#'): mn-image(src='/public/imgs/rawfit.jpg')
+        a(href='#'): mn-image(src='/public/imgs/cat.jpg')
+        a(href='#'): mn-image(src='/public/imgs/bb-bitch.gif')
+        a(href='#'): mn-image(src='/public/imgs/rawfit.jpg')
+        a(href='#'): mn-image(src='/public/imgs/cat.jpg')
 
     footer.align-end
       small this site is under development...
