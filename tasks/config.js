@@ -5,7 +5,7 @@ module.exports = {
     './sources/angular/**/*.js'
   ],
   views: {
-    src: './sources/views/**/*.jade',
+    src: './sources/views/*.jade',
     dest: './'
   },
   imgs: {
