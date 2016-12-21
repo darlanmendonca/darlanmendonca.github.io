@@ -3,6 +3,7 @@
 
 @import 'components/reset';
 @import 'components/typography';
+@import 'components/identity';
 
 h1 {
   text-align: center;
@@ -29,13 +30,3 @@ mn-image {
     margin: 0 0 1em 0;
   }
 }
-
-.cases {
-  margin-top: -10vh;
-}
-
-// .home {
-//   @media (max-width: 415px) {
-//     padding-top: 25vh;
-//   }
-// }

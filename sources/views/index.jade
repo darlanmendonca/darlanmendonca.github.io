@@ -3,18 +3,15 @@ extends layouts/sample
 block content
   .layout-fullscreen.layout-centered.home
     header.header
-      h2 Darlan Mendonça
+      h2 Hi, my name is Darlan Mendonça
 
     h1 I build rich experiences with clean code
       small using Javascript and Swift
 
-  .cases.layout-centered
-    nav.layout-column.layout-sm-row
-      a(href='#'): mn-image(src='/public/imgs/bb-bitch.gif')
-      a(href='#'): mn-image(src='/public/imgs/rawfit.jpg')
-      a(href='#'): mn-image(src='/public/imgs/cat.jpg')
-
-  footer(style='text-align: center; padding: 1em 0;')
-    small this site is under development...
+    .cases
+      nav.layout-column.layout-sm-row
+        a(href='#'): mn-image(src='/public/imgs/bb-bitch.gif')
+        a(href='#'): mn-image(src='/public/imgs/rawfit.jpg')
+        a(href='#'): mn-image(src='/public/imgs/cat.jpg')
 
 
