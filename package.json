@@ -11,7 +11,9 @@
     "pretest": "scripts/lint.sh",
     "test": "echo 'no tests specified'"
   },
-  "dependencies": {},
+  "dependencies": {
+    "minimalist": "git+https://github.com/darlanmendonca/minimalist.git#component-style"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "eslint": "^4.16.0",
@@ -23,6 +25,8 @@
     "node-sass": "^4.7.2",
     "pug": "^2.0.0-rc.4",
     "pug-cli": "^1.0.0-alpha6",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
     "uglifyjs-webpack-plugin": "^1.0.0-beta.1",
     "webpack": "^3.10.0"
   }
