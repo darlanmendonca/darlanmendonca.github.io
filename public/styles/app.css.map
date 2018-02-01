@@ -1,1 +1,12 @@
-{"version":3,"sources":["components/reset.scss","components/typography.scss","components/identity.scss","app.scss"],"names":[],"mappings":"AAAA,KACE,QAAU,CCDZ,KACE,mCACA,oCACA,sBAAW,CAGb,WACE,wBACA,kBACA,gBACA,yJACA,2IAA6I,CCX/I,kBACU,iBAAmB,CAD7B,aAGU,cAAgB,CCI1B,GACE,kBACA,iBAAmB,CAQpB,SALG,mBACA,eACA,cACA,eAAiB,CAIrB,IACE,cAAgB,CADlB,MAGK,SAAW,CAGhB,SACE,UAAY,CAEZ,0BAHF,SAII,gBAAkB,CAErB,CAAA","file":"app.css","sourcesContent":["body {\n  margin: 0;\n}\n","body {\n  -webkit-font-smoothing: antialiased;\n  font-family: 'Open Sans', sans-serif;\n  color: rgba(0, 0, 0, .87);\n}\n\n@font-face {\n  font-family: 'Open Sans';\n  font-style: normal;\n  font-weight: 400;\n  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;\n}\n",".home {\n  h1, h2 {text-align: center}\n\n  .cases {margin-top: 5vh}\n}\n","/* inject:imports */\n/* endinject */\n\n@import 'components/reset';\n@import 'components/typography';\n@import 'components/identity';\n\nh1 {\n  text-align: center;\n  margin-bottom: 2em;\n\n  small {\n    font-weight: normal;\n    font-size: .5em;\n    display: block;\n    line-height: 2em;\n  }\n}\n\nnav {\n  margin-top: 2em;\n\n  a {outline: 0}\n}\n\nmn-image {\n  margin: 1em;\n\n  @media (max-width: 415px) {\n    margin: 0 0 1em 0;\n  }\n}\n"]}
+{
+	"version": 3,
+	"file": "app.css",
+	"sources": [
+		"../../sources/styles/app.scss",
+		"../../sources/styles/components/reset.scss",
+		"../../sources/styles/components/typography.scss",
+		"../../sources/styles/components/identity.scss"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,IAAI,AAAC,CACH,MAAM,CAAE,CAAC,CACV,ACFD,AAAA,IAAI,AAAC,CACH,sBAAsB,CAAE,WAAW,CACnC,WAAW,CAAE,uBAAuB,CACpC,KAAK,CAAE,gBAAkB,CAC1B,AAED,UAAU,CACR,WAAW,CAAE,WAAW,CACxB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,GAAG,CAChB,GAAG,CAAE,kBAAkB,CAAE,iBAAiB,CAAE,+FAA+F,CAAC,eAAe,CAC3J,aAAa,CAAE,6HAA6H,CCX9I,AACE,KADG,CACH,EAAE,CADJ,AACM,KADD,CACC,EAAE,AAAC,CAAC,UAAU,CAAE,MAAM,CAAG,AAD/B,AAGE,KAHG,CAGH,MAAM,AAAC,CAAC,UAAU,CAAE,GAAG,CAAG,AHI5B,AAAA,EAAE,AAAC,CACD,UAAU,CAAE,MAAM,CAClB,aAAa,CAAE,GAAG,CAQnB,AAVD,AAIE,EAJA,CAIA,KAAK,AAAC,CACJ,WAAW,CAAE,MAAM,CACnB,SAAS,CAAE,IAAI,CACf,OAAO,CAAE,KAAK,CACd,WAAW,CAAE,GAAG,CACjB,AAGH,AAAA,GAAG,AAAC,CACF,UAAU,CAAE,GAAG,CAGhB,AAJD,AAGE,GAHC,CAGD,CAAC,AAAC,CAAC,OAAO,CAAE,CAAC,CAAG,AAGlB,AAAA,QAAQ,AAAC,CACP,MAAM,CAAE,GAAG,CAKZ,AAHC,MAAM,EAAE,SAAS,EAAE,KAAK,EAH1B,AAAA,QAAQ,AAAC,CAIL,MAAM,CAAE,SAAS,CAEpB"
+}
