@@ -5,11 +5,19 @@
   "scripts": {
     "pug": "scripts/pug.sh",
     "start": "scripts/start.sh",
-    "test": "scripts/test"
+    "lint": "scripts/lint.sh",
+    "pretest": "scripts/lint.sh",
+    "test": "echo 'no tests specified'"
   },
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.23.6",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
     "pug": "^2.0.0-rc.4",
     "pug-cli": "^1.0.0-alpha6"
   }
