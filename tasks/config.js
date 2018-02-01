@@ -4,10 +4,6 @@ module.exports = {
     './test/**/*.js',
     './sources/angular/**/*.js'
   ],
-  views: {
-    src: './sources/views/*.jade',
-    dest: './'
-  },
   imgs: {
     src: './sources/imgs/*',
     dest: './public/imgs',

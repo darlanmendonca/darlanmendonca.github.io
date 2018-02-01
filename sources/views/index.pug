@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title Darlan Mendonça
+    base(href='/')
+
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no')
+
+    link(rel='stylesheet', href='/public/styles/vendor.css')
+    link(rel='stylesheet', href='/public/styles/app.css')
+  body
+    .layout-fullscreen.layout-centered.home
+      header.header
+        h2 Hi, my name is Darlan Mendonça
+
+      h1 I build rich experiences with clean code
+        small using Javascript, Swift ...
+
+      .cases
+        nav.layout-column.layout-sm-row
+          a(href='#'): mn-image(src='/public/imgs/bb-bitch.gif')
+          a(href='#'): mn-image(src='/public/imgs/rawfit.jpg')
+          a(href='#'): mn-image(src='/public/imgs/cat.jpg')
+
+      script(src='/public/scripts/vendor.js')
+      //- script(src='/public/scripts/app.js')
+
+
