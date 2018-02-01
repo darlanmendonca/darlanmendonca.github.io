@@ -2,7 +2,7 @@
 
 set -e
 
-./node_modules/.bin/pug sources/views/*.pug \
+./node_modules/.bin/pug sources/*.pug \
 --out ./ \
 --silent \
---watch sources/views/*.pug
+--watch sources/*.pug
